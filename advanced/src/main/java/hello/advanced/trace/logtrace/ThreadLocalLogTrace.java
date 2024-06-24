@@ -56,7 +56,8 @@ public class ThreadLocalLogTrace implements LogTrace{
     private void releaseTraceId() {
         TraceId traceId = traceIdHolder.get();
         if (traceId.isFirstLevel()) {
-            traceIdHolder.remove();//destroy
+            traceIdHolder.remove();//destroy 싹다 없어짐
+            // 쓰레드 로컬이 가진 데이터를 삭제한다.
         } else {
             traceIdHolder.set(traceId.createPreviousId());
         }
