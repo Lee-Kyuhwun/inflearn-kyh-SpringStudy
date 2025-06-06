@@ -48,7 +48,7 @@ public class ReflectionTest {
     private void dynamicCall(String methodName) throws Exception {
         Hello target = new Hello();
         log.info("Start {}", methodName);
-        Object result = Hello.class.getMethod(methodName).invoke(target);
+        Object result = Hello.class.getMethod(methodName).invoke(target); // 메서드 이름을 동적으로 받아서 호출
         log.info("result={}", result);
     }
 
