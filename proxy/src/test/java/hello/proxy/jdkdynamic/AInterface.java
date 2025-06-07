@@ -1,6 +1,9 @@
 package hello.proxy.jdkdynamic;
 
-public interface Ainterface {
+public interface AInterface {
 
     String call();
+
+
+
 }

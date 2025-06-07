@@ -1,6 +1,6 @@
 package hello.proxy.jdkdynamic;
 
-public class AImpl implements Ainterface {
+public class AImpl implements AInterface {
 
 
     @Override
